@@ -1,4 +1,4 @@
-package Aula02.Exercicio01;
+package aula02.exercicio01;
 
 public class Veiculo {
 

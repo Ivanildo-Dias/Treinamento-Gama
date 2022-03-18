@@ -1,4 +1,4 @@
-package Aula02.Exercicio02;
+package aula02.exercicio02;
 
 public class PrincipalRelogio {
     public static void main(String[] args) {
