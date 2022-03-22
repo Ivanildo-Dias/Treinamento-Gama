@@ -14,7 +14,6 @@ public class AppContas {
         int opcao = 0;
         int numero;
         double saldo, limite;
-        String entradaDigitada;
         Conta c;
 
         while (opcao != 6) {
@@ -23,7 +22,7 @@ public class AppContas {
             System.out.println("------------------------------------");
             System.out.println("1 - Nova conta corrente");
             System.out.println("2 - Nova conta especial");
-            System.out.println("3 - Procurar conta");
+            System.out.println("3 - Buscar conta");
             System.out.println("4 - Alterar conta");
             System.out.println("5 - Apagar conta");
             System.out.println("6 - Sair do programa");
@@ -77,8 +76,7 @@ public class AppContas {
                     System.out.println("A L T E R A R  C O N T A");
                     System.out.println("------------------------------------");
                     System.out.println("Digite o número da conta:");
-                    entradaDigitada = teclado.nextLine();
-                    numero = Integer.parseInt(entradaDigitada);
+                    numero = teclado.nextInt();
                     System.out.println("Digite o novo número da conta:");
                     numero = teclado.nextInt();
                     boolean alterou = contas.alterarNumeroConta(numero);
@@ -95,8 +93,8 @@ public class AppContas {
                     System.out.println("A P A G A R  C O N T A");
                     System.out.println("------------------------------------");
                     System.out.println("Digite o número da conta que deseja excluir:");
-                    entradaDigitada = teclado.nextLine();
-                    numero = Integer.parseInt(entradaDigitada);
+                    numero = teclado.nextInt();
+                    System.out.println("------------------------------------");
                     boolean removeu = contas.remover(numero);
                     if(removeu) {
                         System.out.println("Conta removida com sucesso.");

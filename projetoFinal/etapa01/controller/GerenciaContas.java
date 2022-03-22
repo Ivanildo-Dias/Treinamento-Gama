@@ -21,7 +21,7 @@ public class GerenciaContas {
                 return contas.get(i).toString();
             }
         }
-        return "Não encontrado";
+        return "A conta não foi encontrado.";
     }
 
     /*
