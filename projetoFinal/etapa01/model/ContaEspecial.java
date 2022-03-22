@@ -23,4 +23,9 @@ public class ContaEspecial extends Conta{
         }
     }  
     
+    @Override
+    public String toString() {
+        return "Número da conta: "+ numero + "\nSaldo em conta: R$ " + saldo + "\nLimite da conta: R$ " + limite;
+    }
+
 }

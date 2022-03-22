@@ -31,4 +31,9 @@ public abstract class Conta {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Número da conta: "+ numero + "\nSaldo em conta: R$" + saldo;
+    }
+
 }

@@ -5,4 +5,9 @@ public class ContaCorrente extends Conta{
         super(numero, saldo);
     } 
     
+    @Override
+    public String toString() {
+        return "Número da conta: "+ numero + "\nSaldo em conta: R$ " + saldo;
+    }
+    
 }

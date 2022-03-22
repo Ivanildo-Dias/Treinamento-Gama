@@ -67,6 +67,7 @@ public class AppContas {
                     System.out.println("------------------------------------");
                     System.out.println("Digite o número da conta:");
                     numero = teclado.nextInt();
+                    System.out.println("------------------------------------");
                     System.out.println(contas.exibir(numero));
                     break;
 
