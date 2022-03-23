@@ -1,4 +1,4 @@
-package br.dias;
+package br.banco;
 
 import static org.junit.Assert.assertTrue;
 
