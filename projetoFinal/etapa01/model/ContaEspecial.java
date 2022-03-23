@@ -21,9 +21,9 @@ public class ContaEspecial extends Conta{
     }
 
     @Override
-    public boolean deposita(double valorDeposito){
-        return super.deposita(valorDeposito);
-    } 
+    public String deposita(double valorDeposito) {
+            return super.deposita(valorDeposito);
+        }
     
     @Override
     public String toString() {

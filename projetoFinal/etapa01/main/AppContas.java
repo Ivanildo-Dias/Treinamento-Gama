@@ -16,7 +16,7 @@ public class AppContas {
         double saldo, limite, valorSaque, valorDeposito;
         Conta c;
 
-        while (opcao != 8) {
+        while (opcao != 7) {
             System.out.println("------------------------------------");
             System.out.println("C A D A S T R O  D E  C O N T A S");
             System.out.println("------------------------------------");

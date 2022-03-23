@@ -52,13 +52,13 @@ public class GerenciaContas {
         return "Você não tem saldo suficiente para o saque.";
     }
 
-    public boolean deposita(int numero, double valorDeposito) {
+    public String deposita(int numero, double valorDeposito) {
         for (int i = 0; i < contas.size(); i++) {
             if (contas.get(i).getNumero() == numero) {
                 return contas.get(i).deposita(valorDeposito);
             }
         }
-        return false;
+        return "Não foi possível realizar o depósito.";
     }
 
 }

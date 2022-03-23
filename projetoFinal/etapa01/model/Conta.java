@@ -18,19 +18,19 @@ public abstract class Conta {
     }
         
     public String  saca(double valorSaque) {
-        if(valorSaque <= saldo) {
+        if(valorSaque >= 0) {
             saldo -= valorSaque;
             return "Saque realizado com sucesso!\nVocê acaba de sacar R$ " + valorSaque;
         }
         return "Você não tem saldo suficiente para o saque.";
     }
 
-    public boolean deposita(double valorDeposito){
+    public String deposita(double valorDeposito){
         if(valorDeposito > 0) {
             saldo += valorDeposito;
-            return true;
+            return "O depósito de R$ " + valorDeposito + ", foi realizado com sucesso!";
         }
-        return false;
+        return "Não foi possível realizar o depósito.";
     }
 
     @Override
