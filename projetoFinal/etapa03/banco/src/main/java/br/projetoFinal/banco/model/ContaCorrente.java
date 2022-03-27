@@ -10,6 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="tb_conta_corrente")
 public class ContaCorrente {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) 
     @Column(name = "numero")
@@ -33,5 +34,22 @@ public class ContaCorrente {
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
+    /*
+    public ContaCorrente(int numero, double saldo){
+        this.numero = numero;
+        this.saldo = saldo;
+    }
+    
+    public void depositar(double valorDeposito){
+        if(valorDeposito > 0) {
+            saldo += valorDeposito;
+        }
+    }
 
+    public void  saca(double valorSaque) {
+        if(valorSaque >= 0) {
+            saldo -= valorSaque;
+        }
+    }
+    */
 }

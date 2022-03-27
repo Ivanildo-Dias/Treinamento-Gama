@@ -44,5 +44,23 @@ public class ContaEspecial {
 	public void setLimite(double limite) {
 		this.limite = limite;
 	}
+    /*
+	public ContaEspecial(int numero, double saldo, double limite){
+        this.numero = numero;
+        this.saldo = saldo;
+		this.limite = limite;
+    }
+	
+	public void depositar(double valorDeposito){
+        if(valorDeposito > 0) {
+            saldo += valorDeposito;
+        }
+    }
 
+    public void  saca(double valorSaque) {
+        if(valorSaque <= getSaldo()+limite) {
+            saldo -= valorSaque;
+        }
+    }
+	*/
 }

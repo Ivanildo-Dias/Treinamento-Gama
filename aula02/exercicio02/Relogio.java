@@ -1,4 +1,4 @@
-package aula02.exercicio02;
+package exercicio02;
 
 public class Relogio {
     private int hora;
